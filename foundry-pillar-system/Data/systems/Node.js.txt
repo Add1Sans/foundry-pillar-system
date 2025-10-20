@@ -1,0 +1,2144 @@
+Welcome to Node.js v25.0.0.
+Type ".help" for more information.
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # foundry-pillar-system/system.json  (V13-ready manifest)
+# foundry-pillar-system/system.json  (V13-ready manifest)
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> {
+|   "id": "pillars-of-resolve",
+|   "title": "Pillars of Resolve (Percentile)",
+|   "description": "A stamina-driven, d100 roll-under TTRPG with five Pillars: Vigor, Grace, Instinct, Theory, Presence.",
+|   "version": "0.2.0",
+|   "compatibility": {
+|     "minimum": "13",
+|     "verified": "13"
+|   },
+|   "authors": [{ "name": "You" }],
+|   "gridDistance": 5,
+|   "gridUnits": "ft",
+|
+|   // V13: declare the sub-types this system uses so Foundry accepts them
+|   "documentTypes": {
+|     "Actor": ["character"],
+|     "Item": ["talent", "weapon", "spell"]
+|   },
+|
+|   "packs": [
+|     { "name": "pillar-talents",  "label": "Pillar Talents",  "path": "packs/pillar-talents.db",  "type": "Item",  "private": false, "system": "pillars-of-resolve" },
+|     { "name": "weapon-talents",  "label": "Weapon Talents",  "path": "packs/weapon-talents.db",  "type": "Item",  "private": false, "system": "pillars-of-resolve" },
+|     { "name": "starter-spells",  "label": "Starter Spells",  "path": "packs/starter-spells.db",  "type": "Item",  "private": false, "system": "pillars-of-resolve" },
+|     { "name": "starter-weapons", "label": "Starter Weapons", "path": "packs/starter-weapons.db", "type": "Item",  "private": false, "system": "pillars-of-resolve" },
+|     { "name": "sample-actors",   "label": "Sample Actors",   "path": "packs/sample-actors.db",   "type": "Actor", "private": false, "system": "pillars-of-resolve" }
+|   ]
+| }
+{
+  id: 'pillars-of-resolve',
+  title: 'Pillars of Resolve (Percentile)',
+  description: 'A stamina-driven, d100 roll-under TTRPG with five Pillars: Vigor, Grace, Instinct, Theory, Presence.',
+  version: '0.2.0',
+  compatibility: { minimum: '13', verified: '13' },
+  authors: [ { name: 'You' } ],
+  gridDistance: 5,
+  gridUnits: 'ft',
+  documentTypes: { Actor: [ 'character' ], Item: [ 'talent', 'weapon', 'spell' ] },
+  packs: [
+    {
+      name: 'pillar-talents',
+      label: 'Pillar Talents',
+      path: 'packs/pillar-talents.db',
+      type: 'Item',
+      private: false,
+      system: 'pillars-of-resolve'
+    },
+    {
+      name: 'weapon-talents',
+      label: 'Weapon Talents',
+      path: 'packs/weapon-talents.db',
+      type: 'Item',
+      private: false,
+      system: 'pillars-of-resolve'
+    },
+    {
+      name: 'starter-spells',
+      label: 'Starter Spells',
+      path: 'packs/starter-spells.db',
+      type: 'Item',
+      private: false,
+      system: 'pillars-of-resolve'
+    },
+    {
+      name: 'starter-weapons',
+      label: 'Starter Weapons',
+      path: 'packs/starter-weapons.db',
+      type: 'Item',
+      private: false,
+      system: 'pillars-of-resolve'
+    },
+    {
+      name: 'sample-actors',
+      label: 'Sample Actors',
+      path: 'packs/sample-actors.db',
+      type: 'Actor',
+      private: false,
+      system: 'pillars-of-resolve'
+    }
+  ]
+}
+>
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # foundry-pillar-system/template.json
+# foundry-pillar-system/template.json
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # (Still valid in V13; used by migrateSystemData and for defaults)
+# (Still valid in V13; used by migrateSystemData and for defaults)
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> {
+|   "Actor": {
+|     "types": ["character"],
+|     "templates": [],
+|     "character": {
+|       "p": { "vigor": 50, "grace": 50, "instinct": 50, "theory": 50, "presence": 50 },
+|       "derived": { "hp": 60, "sp": 50, "accuracy": 50, "pd": 40, "md": 40, "spregen": 10, "move": 10 },
+|       "integrity": { "armor": 100, "ward": 100 },
+|       "defenses": [],
+|       "equipment": [],
+|       "spells": [],
+|       "talents": [],
+|       "status": []
+|     }
+|   },
+|   "Item": {
+|     "types": ["talent", "weapon", "spell"],
+|     "templates": [],
+|     "talent": {
+|       "pillar": "",
+|       "ev": 0,
+|       "type": "Passive",
+|       "spCost": 0,
+|       "description": ""
+|     },
+|     "weapon": {
+|       "category": "Melee",
+|       "class": "",
+|       "primaryStat": "",
+|       "secondaryStat": "",
+|       "spCost": 15,
+|       "damage": "100%",
+|       "ap": 0,
+|       "critTrait": "",
+|       "range": "1m",
+|       "effect": ""
+|     },
+|     "spell": {
+|       "element": "",
+|       "cost": 0,
+|       "scaling": "",
+|       "range": "",
+|       "effect": "",
+|       "cast": ""
+|     }
+|   }
+| }
+{
+  Actor: {
+    types: [ 'character' ],
+    templates: [],
+    character: {
+      p: [Object],
+      derived: [Object],
+      integrity: [Object],
+      defenses: [],
+      equipment: [],
+      spells: [],
+      talents: [],
+      status: []
+    }
+  },
+  Item: {
+    types: [ 'talent', 'weapon', 'spell' ],
+    templates: [],
+    talent: { pillar: '', ev: 0, type: 'Passive', spCost: 0, description: '' },
+    weapon: {
+      category: 'Melee',
+      class: '',
+      primaryStat: '',
+      secondaryStat: '',
+      spCost: 15,
+      damage: '100%',
+      ap: 0,
+      critTrait: '',
+      range: '1m',
+      effect: ''
+    },
+    spell: {
+      element: '',
+      cost: 0,
+      scaling: '',
+      range: '',
+      effect: '',
+      cast: ''
+    }
+  }
+}
+>
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # foundry-pillar-system/packs/pillar-talents.db
+# foundry-pillar-system/packs/pillar-talents.db
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # (unchanged content — valid JSON array)
+# (unchanged content — valid JSON array)
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> [ { "name": "Iron Grip", "type": "talent", "system": { "pillar": "Vigor", "ev": 5, "type": "Passive", "spCost": 0, "description": "Cannot be disarmed. +10 to Climb and Grapple." } },
+|   { "name": "Hauler’s Endurance", "type": "talent", "system": { "pillar": "Vigor", "ev": 5, "type": "Passive", "spCost": 0, "description": "Double carry and lift capacity. Overburden penalties halved." } },
+|   { "name": "Tireless Step", "type": "talent", "system": { "pillar": "Vigor", "ev": 10, "type": "Passive", "spCost": 0, "description": "Overland travel +25% before Fatigue. +5 SP on rests." } },
+|   { "name": "Steelhide", "type": "talent", "system": { "pillar": "Vigor", "ev": 10, "type": "Passive", "spCost": 0, "description": "Passive 10% reduction to physical damage taken (stacks multiplicatively with armor)." } },
+|   { "name": "Unbreakable Posture", "type": "talent", "system": { "pillar": "Vigor", "ev": 10, "type": "Passive", "spCost": 0, "description": "Cannot be knocked prone by non-critical hits. +10 to resist Shove/Trip." } },
+|   { "name": "Adrenal Core", "type": "talent", "system": { "pillar": "Vigor", "ev": 15, "type": "Passive", "spCost": 0, "description": "When below 25% HP, regain 20 SP and +10 to Vigor rolls for 1 round. 1/long rest." } },
+|   { "name": "Second Wind", "type": "talent", "system": { "pillar": "Vigor", "ev": 20, "type": "Active", "spCost": 25,"description": "Recover 10% of max HP and remove one minor status. Cooldown: 2 rounds." } },
+|   { "name": "Momentum Drive", "type": "talent", "system": { "pillar": "Vigor", "ev": 20, "type": "Passive", "spCost":0, "description": "Each consecutive melee hit grants +5% damage (max +25%). Resets on miss." } },
+|   { "name": "Collateral Swing", "type": "talent", "system": { "pillar": "Vigor", "ev": 20, "type": "Passive", "spCost": 0, "description": "Melee hits deal 25% splash damage to an adjacent enemy." } },
+|   { "name": "Pain Tolerance", "type": "talent", "system": { "pillar": "Vigor", "ev": 15, "type": "Passive", "spCost":0, "description": "Wound penalties halved. You may act at 0 HP until Fatigue II triggers." } },
+|   { "name": "Iron Lungs", "type": "talent", "system": { "pillar": "Vigor", "ev": 10, "type": "Passive", "spCost": 0, "description": "Resist suffocation, smoke, mild poison. Drowning rate −75%." } },
+|   { "name": "Stoneblood", "type": "talent", "system": { "pillar": "Vigor", "ev": 20, "type": "Passive", "spCost": 0, "description": "+20 to resist Bleed, Burn, Poison. Bleed/Burn drain SP instead of HP." } },
+|   { "name": "Adrenal Surge", "type": "talent", "system": { "pillar": "Vigor", "ev": 25, "type": "Passive", "spCost": 0, "description": "Once per combat, restore 50% SP when you land a critical hit." } },
+|   { "name": "Enduring Presence", "type": "talent", "system": { "pillar": "Vigor", "ev": 20, "type": "Passive", "spCost": 0, "description": "Allies within 5m gain +10 to Fear/Morale while you’re conscious." } },
+|   { "name": "Regenerative Strain", "type": "talent", "system": { "pillar": "Vigor", "ev": 25, "type": "Passive", "spCost": 0, "description": "When not Fatigued, heal 2% HP and 2 SP each turn. Suspended if poisoned or burning." } },
+|   { "name": "Seismic Slam", "type": "talent", "system": { "pillar": "Vigor", "ev": 35, "type": "Active", "spCost": 30, "description": "Ground impact: 10 ft radius, 50% Vigor damage, knock prone. Cooldown: 3 rounds." } },
+|   { "name": "Unyielding Rampart", "type": "talent", "system": { "pillar": "Vigor", "ev": 30, "type": "Active", "spCost": 0, "description": "Hold ground vs forced movement. Block grants +20 Defense but doubles SP cost while blocking." } },
+|   { "name": "Overpower", "type": "talent", "system": { "pillar": "Vigor", "ev": 30, "type": "Passive", "spCost": 0, "description": "While grappling, deal 10% HP damage per turn. Opponents contest with Grace or Instinct." } },
+|   { "name": "Furnace Heart", "type": "talent", "system": { "pillar": "Vigor", "ev": 25, "type": "Passive", "spCost": 0, "description": "Heat/fire/exhaustion damage halved. Travel distance doubled in extreme heat." } },
+|   { "name": "Defiance", "type": "talent", "system": { "pillar": "Vigor", "ev": 30, "type": "Passive", "spCost": 0, "description": "Once per long rest, automatically succeed a Vigor-based death or endurance check." } },
+|   { "name": "Iron Storm", "type": "talent", "system": { "pillar": "Vigor", "ev": 40, "type": "Active", "spCost": 0, "description": "Spend all remaining SP: wide cleave hitting all in reach. Each target consumes 10 SP." } },
+|   { "name": "Living Juggernaut", "type": "talent", "system": { "pillar": "Vigor", "ev": 50, "type": "Passive", "spCost": 0, "description": "While above 75% SP: immune to Stagger, Daze, and minor knockback." } },
+|   { "name": "Titan’s Endurance", "type": "talent", "system": { "pillar": "Vigor", "ev": 45, "type": "Passive", "spCost": 0, "description": "Max SP +50%. Recover +5% SP at end of each round." } },
+|   { "name": "Unstoppable Force", "type": "talent", "system": { "pillar": "Vigor", "ev": 60, "type": "Active", "spCost": 0, "description": "Spend HP in place of SP at 2:1. If HP spent ≥20%, the attack is an automatic critical." } },
+|   { "name": "Earthsplitter", "type": "talent", "system": { "pillar": "Vigor", "ev": 50, "type": "Passive", "spCost": 0, "description": "Melee hits release shockwaves: +10% splash and unbalance (Instinct Save DC 50)." } },
+|   { "name": "Colossus Stance", "type": "talent", "system": { "pillar": "Vigor", "ev": 55, "type": "Active", "spCost":30, "description": "Double space, +20 reach, −20 Grace while active. Costs 30 SP/round to sustain." } },
+|   { "name": "Heart of the Mountain", "type": "talent", "system": { "pillar": "Vigor", "ev": 60, "type": "Passive", "spCost": 0, "description": "Immune to Fatigue, poison, and Bleed. Remain conscious at 0 HP until body is destroyed (1/epic battle)." } },
+|   { "name": "Devastating Throw", "type": "talent", "system": { "pillar": "Vigor", "ev": 25, "type": "Active", "spCost": 20, "description": "Hurl a creature or object up to your size. Damage scales with Vigor ×0.5." } },
+|   { "name": "Sundering Blow", "type": "talent", "system": { "pillar": "Vigor", "ev": 30, "type": "Passive", "spCost":0, "description": "On critical hits, reduce target armor by 10% (stacks to −30%)." } },
+|
+|   { "name": "Perfect Draw", "type": "talent", "system": { "pillar": "Grace", "ev": 10, "type": "Passive", "spCost": 0, "description": "+10 Accuracy with swords; first attack each combat costs −5 SP." } },
+|   { "name": "Flow Step", "type": "talent", "system": { "pillar": "Grace", "ev": 15, "type": "Passive", "spCost": 0, "description": "After hitting, move 10 ft without provoking." } },
+|   { "name": "Quick Riposte", "type": "talent", "system": { "pillar": "Grace", "ev": 20, "type": "Active", "spCost": 15, "description": "Once per round, when a melee attack misses you, counterattack for 50% weapon damage." } },
+|   { "name": "Flicker Slash", "type": "talent", "system": { "pillar": "Grace", "ev": 25, "type": "Active", "spCost": 25, "description": "Perform two rapid attacks at −10 Accuracy; second hit 75% damage." } },
+|   { "name": "Momentum Redirect", "type": "talent", "system": { "pillar": "Grace", "ev": 30, "type": "Passive", "spCost": 0, "description": "After dodging or parrying, your next attack gains +20 Accuracy and +20% damage." } },
+|   { "name": "Elegant Defense", "type": "talent", "system": { "pillar": "Grace", "ev": 35, "type": "Passive", "spCost": 0, "description": "If your parry MoS ≥ 40, your next Grace roll this turn has Advantage." } },
+|   { "name": "Razor Precision", "type": "talent", "system": { "pillar": "Grace", "ev": 40, "type": "Passive", "spCost": 0, "description": "Critical threshold lowered by 10 (MoS 30+ crits)." } },
+|   { "name": "Dancing Blade", "type": "talent", "system": { "pillar": "Grace", "ev": 45, "type": "Passive", "spCost": 0, "description": "Chain up to 3 attacks per turn; each extra attack costs +10 SP." } },
+|   { "name": "Arc of Perfection", "type": "talent", "system": { "pillar": "Grace", "ev": 50, "type": "Active", "spCost": 50, "description": "Perfect cleave line; foes failing by 30+ suffer a severing critical." } },
+|
+|   { "name": "Micro-Read", "type": "talent", "system": { "pillar": "Instinct", "ev": 1, "type": "Passive", "spCost": 0, "description": "+2 to detect subtle threats and ambush signs." } },
+|   { "name": "Quiet Breath", "type": "talent", "system": { "pillar": "Instinct", "ev": 2, "type": "Passive", "spCost":0, "description": "+1 SP regen while hidden." } },
+|   { "name": "Toe Edge", "type": "talent", "system": { "pillar": "Instinct", "ev": 3, "type": "Passive", "spCost": 0, "description": "Once per turn, take a 1 ft micro-step without provoking." } },
+|   { "name": "Eye for Openings", "type": "talent", "system": { "pillar": "Instinct", "ev": 4, "type": "Passive", "spCost": 0, "description": "+2 Accuracy vs a foe you observed last round." } },
+|   { "name": "Loose Sand", "type": "talent", "system": { "pillar": "Instinct", "ev": 5, "type": "Active", "spCost": 5,"description": "Create a 5 ft patch of unstable footing; target suffers −10 Accuracy for 1 round." } },
+|   { "name": "Brush Cover", "type": "talent", "system": { "pillar": "Instinct", "ev": 7, "type": "Passive", "spCost": 0, "description": "+5 Defense while in light cover." } },
+|   { "name": "Ambush Sense", "type": "talent", "system": { "pillar": "Instinct", "ev": 10, "type": "Passive", "spCost": 0, "description": "Negate Surprise once per scene; +10 Initiative." } },
+|   { "name": "Hunter’s Mark", "type": "talent", "system": { "pillar": "Instinct", "ev": 12, "type": "Active", "spCost": 10, "description": "Tag a target; you gain +10 Accuracy and +10% damage vs it for 2 rounds." } },
+|   { "name": "Predator’s Step", "type": "talent", "system": { "pillar": "Instinct", "ev": 15, "type": "Passive", "spCost": 0, "description": "No movement penalty while sneaking; +5 Accuracy from stealth." } },
+|   { "name": "Slipstream", "type": "talent", "system": { "pillar": "Instinct", "ev": 18, "type": "Active", "spCost": 10, "description": "After a successful dodge, move 10 ft for free." } },
+|   { "name": "Counter Trace", "type": "talent", "system": { "pillar": "Instinct", "ev": 20, "type": "Passive", "spCost": 0, "description": "+10 Accuracy on Reaction attacks." } },
+|   { "name": "Read the Rhythm", "type": "talent", "system": { "pillar": "Instinct", "ev": 25, "type": "Passive", "spCost": 0, "description": "The first melee attack against you each round suffers −10 Accuracy." } },
+|   { "name": "Ghost Lane", "type": "talent", "system": { "pillar": "Instinct", "ev": 30, "type": "Active", "spCost": 15, "description": "Pass through 1 enemy’s space; that enemy loses its Reaction this round." } },
+|   { "name": "Danger Clock", "type": "talent", "system": { "pillar": "Instinct", "ev": 35, "type": "Passive", "spCost": 0, "description": "Once per round, declare Preempt: +10 Defense until your next turn." } },
+|   { "name": "Snap Counter", "type": "talent", "system": { "pillar": "Instinct", "ev": 40, "type": "Active", "spCost":20, "description": "When hit, immediately counterattack at +10 Accuracy." } },
+|   { "name": "Pattern Lock", "type": "talent", "system": { "pillar": "Instinct", "ev": 45, "type": "Passive", "spCost": 0, "description": "If you hit the same target twice in a row, the third gains +20% damage." } },
+|   { "name": "Sixth Sense", "type": "talent", "system": { "pillar": "Instinct", "ev": 50, "type": "Passive", "spCost":0, "description": "Once per encounter, downgrade a physical critical against you by one tier." } },
+|   { "name": "Apex Read", "type": "talent", "system": { "pillar": "Instinct", "ev": 60, "type": "Active", "spCost": 25, "description": "For 1 round, you have Advantage on all Grace and Instinct rolls." } },
+|
+|   { "name": "Notation", "type": "talent", "system": { "pillar": "Theory", "ev": 1, "type": "Passive", "spCost": 0, "description": "+2 to Identify/Analyze Magic checks." } },
+|   { "name": "Tidy Focus", "type": "talent", "system": { "pillar": "Theory", "ev": 2, "type": "Passive", "spCost": 0, "description": "−1 SP on your lowest-tier spells (min 1)." } },
+|   { "name": "Quick Array", "type": "talent", "system": { "pillar": "Theory", "ev": 3, "type": "Passive", "spCost": 0,"description": "+2 Spell Accuracy on your first cast each scene." } },
+|   { "name": "Stable Weave", "type": "talent", "system": { "pillar": "Theory", "ev": 4, "type": "Passive", "spCost": 0, "description": "Reduce spell fizzle chance by 5% (if used in your table rules)." } },
+|   { "name": "Aether Sparks", "type": "talent", "system": { "pillar": "Theory", "ev": 5, "type": "Passive", "spCost": 0, "description": "+5% spell damage vs constructs and golems." } },
+|   { "name": "Calculated Aim", "type": "talent", "system": { "pillar": "Theory", "ev": 7, "type": "Passive", "spCost":0, "description": "Firearms gain +3 Accuracy at medium range." } },
+|   { "name": "Aether Efficiency", "type": "talent", "system": { "pillar": "Theory", "ev": 10, "type": "Passive", "spCost": 0, "description": "−10% SP cost on spells (minimum −3 SP)." } },
+|   { "name": "Sigil Sketch", "type": "talent", "system": { "pillar": "Theory", "ev": 12, "type": "Active", "spCost": 10, "description": "Place a 5 ft ward: allies inside gain +5 Magic Defense for 2 rounds." } },
+|   { "name": "Counter-Matrix", "type": "talent", "system": { "pillar": "Theory", "ev": 15, "type": "Passive", "spCost": 0, "description": "+5 Magic Defense always; +10 while holding a magical focus." } },
+|   { "name": "Prism Channel", "type": "talent", "system": { "pillar": "Theory", "ev": 18, "type": "Active", "spCost": 15, "description": "Change a spell’s element at cast time." } },
+|   { "name": "Overclock", "type": "talent", "system": { "pillar": "Theory", "ev": 20, "type": "Active", "spCost": 10, "description": "Your next spell deals +20% damage; it also costs +10 SP." } },
+|   { "name": "Arc Geometry", "type": "talent", "system": { "pillar": "Theory", "ev": 25, "type": "Passive", "spCost": 0, "description": "Area spells ignore allies if your Margin of Success is 20 or higher." } },
+|   { "name": "Rule of Three", "type": "talent", "system": { "pillar": "Theory", "ev": 30, "type": "Passive", "spCost":0, "description": "Every 3rd spell you cast gains +10 Accuracy." } },
+|   { "name": "Spell Inversion", "type": "talent", "system": { "pillar": "Theory", "ev": 35, "type": "Passive", "spCost": 0, "description": "After a successful Disperse, your next spell of that element gains +25% damage." } },
+|   { "name": "Warded Shell", "type": "talent", "system": { "pillar": "Theory", "ev": 40, "type": "Passive", "spCost": 0, "description": "+10 Magic Defense; once per encounter convert 20 damage you take into SP loss instead." } },
+|   { "name": "Perfect Sigil", "type": "talent", "system": { "pillar": "Theory", "ev": 45, "type": "Active", "spCost": 20, "description": "For 1 round, your spells cannot be countered or deflected." } },
+|   { "name": "Field Theorem", "type": "talent", "system": { "pillar": "Theory", "ev": 50, "type": "Passive", "spCost":0, "description": "Allies within 10 ft gain +5 Magic Defense and −5% spell SP costs." } },
+|   { "name": "Paradox Coil", "type": "talent", "system": { "pillar": "Theory", "ev": 60, "type": "Active", "spCost": 25, "description": "Cast the same spell twice this turn; the second cast still costs full SP." } },
+|
+|   { "name": "Steady Gaze", "type": "talent", "system": { "pillar": "Presence", "ev": 1, "type": "Passive", "spCost": 0, "description": "+2 to Fear resistance." } },
+|   { "name": "Firm Voice", "type": "talent", "system": { "pillar": "Presence", "ev": 2, "type": "Passive", "spCost": 0, "description": "+2 to command/parley checks." } },
+|   { "name": "Battle Poise", "type": "talent", "system": { "pillar": "Presence", "ev": 3, "type": "Passive", "spCost":0, "description": "+1 SP regen while unshaken." } },
+|   { "name": "Rally Sign", "type": "talent", "system": { "pillar": "Presence", "ev": 4, "type": "Active", "spCost": 5,"description": "One ally gains +5 Accuracy for 1 round." } },
+|   { "name": "Stern Warning", "type": "talent", "system": { "pillar": "Presence", "ev": 5, "type": "Passive", "spCost": 0, "description": "On your first hit each combat, the target suffers −5 Accuracy on its next attack." } },
+|   { "name": "Resolve Bond", "type": "talent", "system": { "pillar": "Presence", "ev": 7, "type": "Passive", "spCost":0, "description": "Adjacent ally gains +2 Defense." } },
+|   { "name": "Kindled Spirit", "type": "talent", "system": { "pillar": "Presence", "ev": 10, "type": "Passive", "spCost": 0, "description": "Healing you perform is 10% stronger." } },
+|   { "name": "Courage Pulse", "type": "talent", "system": { "pillar": "Presence", "ev": 12, "type": "Active", "spCost": 10, "description": "Allies within 10 ft gain +10 vs Fear for 2 rounds." } },
+|   { "name": "Command Step", "type": "talent", "system": { "pillar": "Presence", "ev": 15, "type": "Passive", "spCost": 0, "description": "When you enter melee, the nearest ally can move 5 ft for free." } },
+|   { "name": "Aura of Honesty", "type": "talent", "system": { "pillar": "Presence", "ev": 18, "type": "Passive", "spCost": 0, "description": "+2 to detect lies; nearby foes −5 Presence." } },
+|   { "name": "Steel Will", "type": "talent", "system": { "pillar": "Presence", "ev": 20, "type": "Passive", "spCost": 0, "description": "Once per encounter, ignore a charm, fear, or compulsion for one round." } },
+|   { "name": "Commanding Tone", "type": "talent", "system": { "pillar": "Presence", "ev": 25, "type": "Passive", "spCost": 0, "description": "On MoS ≥ 20 social success, gain +10 Presence on the next attempt." } },
+|   { "name": "Rallying Cry", "type": "talent", "system": { "pillar": "Presence", "ev": 30, "type": "Active", "spCost":15, "description": "Party gains +5 Accuracy and +5 SP regen for 2 rounds." } },
+|   { "name": "Guardian Vow", "type": "talent", "system": { "pillar": "Presence", "ev": 35, "type": "Passive", "spCost": 0, "description": "The first time an adjacent ally would drop to 0 HP each scene, they remain at 1 HP instead." } },
+|   { "name": "Unbowed", "type": "talent", "system": { "pillar": "Presence", "ev": 40, "type": "Passive", "spCost": 0, "description": "Once per encounter, downgrade mental criticals against you by one tier." } },
+|   { "name": "Beacon", "type": "talent", "system": { "pillar": "Presence", "ev": 45, "type": "Active", "spCost": 20, "description": "Allies within 10 ft gain +10 Defense for 1 round." } },
+|   { "name": "Inspiring Presence", "type": "talent", "system": { "pillar": "Presence", "ev": 50, "type": "Passive", "spCost": 0, "description": "Allies starting their turn within 10 ft gain +2 Accuracy and +2 SP." } },
+|   { "name": "Mandate", "type": "talent", "system": { "pillar": "Presence", "ev": 60, "type": "Active", "spCost": 25, "description": "Choose: enemies within 10 ft make a Presence save or lose their Reaction, or allies gain an extra 5-ft step this round." } }
+| ]
+[
+  {
+    name: 'Iron Grip',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 5,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Cannot be disarmed. +10 to Climb and Grapple.'
+    }
+  },
+  {
+    name: 'Hauler’s Endurance',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 5,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Double carry and lift capacity. Overburden penalties halved.'
+    }
+  },
+  {
+    name: 'Tireless Step',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 10,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Overland travel +25% before Fatigue. +5 SP on rests.'
+    }
+  },
+  {
+    name: 'Steelhide',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 10,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Passive 10% reduction to physical damage taken (stacks multiplicatively with armor).'
+    }
+  },
+  {
+    name: 'Unbreakable Posture',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 10,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Cannot be knocked prone by non-critical hits. +10 to resist Shove/Trip.'
+    }
+  },
+  {
+    name: 'Adrenal Core',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 15,
+      type: 'Passive',
+      spCost: 0,
+      description: 'When below 25% HP, regain 20 SP and +10 to Vigor rolls for 1 round. 1/long rest.'
+    }
+  },
+  {
+    name: 'Second Wind',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 20,
+      type: 'Active',
+      spCost: 25,
+      description: 'Recover 10% of max HP and remove one minor status. Cooldown: 2 rounds.'
+    }
+  },
+  {
+    name: 'Momentum Drive',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 20,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Each consecutive melee hit grants +5% damage (max +25%). Resets on miss.'
+    }
+  },
+  {
+    name: 'Collateral Swing',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 20,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Melee hits deal 25% splash damage to an adjacent enemy.'
+    }
+  },
+  {
+    name: 'Pain Tolerance',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 15,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Wound penalties halved. You may act at 0 HP until Fatigue II triggers.'
+    }
+  },
+  {
+    name: 'Iron Lungs',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 10,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Resist suffocation, smoke, mild poison. Drowning rate −75%.'
+    }
+  },
+  {
+    name: 'Stoneblood',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 20,
+      type: 'Passive',
+      spCost: 0,
+      description: '+20 to resist Bleed, Burn, Poison. Bleed/Burn drain SP instead of HP.'
+    }
+  },
+  {
+    name: 'Adrenal Surge',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 25,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Once per combat, restore 50% SP when you land a critical hit.'
+    }
+  },
+  {
+    name: 'Enduring Presence',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 20,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Allies within 5m gain +10 to Fear/Morale while you’re conscious.'
+    }
+  },
+  {
+    name: 'Regenerative Strain',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 25,
+      type: 'Passive',
+      spCost: 0,
+      description: 'When not Fatigued, heal 2% HP and 2 SP each turn. Suspended if poisoned or burning.'
+    }
+  },
+  {
+    name: 'Seismic Slam',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 35,
+      type: 'Active',
+      spCost: 30,
+      description: 'Ground impact: 10 ft radius, 50% Vigor damage, knock prone. Cooldown: 3 rounds.'
+    }
+  },
+  {
+    name: 'Unyielding Rampart',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 30,
+      type: 'Active',
+      spCost: 0,
+      description: 'Hold ground vs forced movement. Block grants +20 Defense but doubles SP cost while blocking.'
+    }
+  },
+  {
+    name: 'Overpower',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 30,
+      type: 'Passive',
+      spCost: 0,
+      description: 'While grappling, deal 10% HP damage per turn. Opponents contest with Grace or Instinct.'
+    }
+  },
+  {
+    name: 'Furnace Heart',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 25,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Heat/fire/exhaustion damage halved. Travel distance doubled in extreme heat.'
+    }
+  },
+  {
+    name: 'Defiance',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 30,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Once per long rest, automatically succeed a Vigor-based death or endurance check.'
+    }
+  },
+  {
+    name: 'Iron Storm',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 40,
+      type: 'Active',
+      spCost: 0,
+      description: 'Spend all remaining SP: wide cleave hitting all in reach. Each target consumes 10 SP.'
+    }
+  },
+  {
+    name: 'Living Juggernaut',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 50,
+      type: 'Passive',
+      spCost: 0,
+      description: 'While above 75% SP: immune to Stagger, Daze, and minor knockback.'
+    }
+  },
+  {
+    name: 'Titan’s Endurance',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 45,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Max SP +50%. Recover +5% SP at end of each round.'
+    }
+  },
+  {
+    name: 'Unstoppable Force',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 60,
+      type: 'Active',
+      spCost: 0,
+      description: 'Spend HP in place of SP at 2:1. If HP spent ≥20%, the attack is an automatic critical.'
+    }
+  },
+  {
+    name: 'Earthsplitter',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 50,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Melee hits release shockwaves: +10% splash and unbalance (Instinct Save DC 50).'
+    }
+  },
+  {
+    name: 'Colossus Stance',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 55,
+      type: 'Active',
+      spCost: 30,
+      description: 'Double space, +20 reach, −20 Grace while active. Costs 30 SP/round to sustain.'
+    }
+  },
+  {
+    name: 'Heart of the Mountain',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 60,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Immune to Fatigue, poison, and Bleed. Remain conscious at 0 HP until body is destroyed (1/epic battle).'
+    }
+  },
+  {
+    name: 'Devastating Throw',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 25,
+      type: 'Active',
+      spCost: 20,
+      description: 'Hurl a creature or object up to your size. Damage scales with Vigor ×0.5.'
+    }
+  },
+  {
+    name: 'Sundering Blow',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 30,
+      type: 'Passive',
+      spCost: 0,
+      description: 'On critical hits, reduce target armor by 10% (stacks to −30%).'
+    }
+  },
+  {
+    name: 'Perfect Draw',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 10,
+      type: 'Passive',
+      spCost: 0,
+      description: '+10 Accuracy with swords; first attack each combat costs −5 SP.'
+    }
+  },
+  {
+    name: 'Flow Step',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 15,
+      type: 'Passive',
+      spCost: 0,
+      description: 'After hitting, move 10 ft without provoking.'
+    }
+  },
+  {
+    name: 'Quick Riposte',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 20,
+      type: 'Active',
+      spCost: 15,
+      description: 'Once per round, when a melee attack misses you, counterattack for 50% weapon damage.'
+    }
+  },
+  {
+    name: 'Flicker Slash',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 25,
+      type: 'Active',
+      spCost: 25,
+      description: 'Perform two rapid attacks at −10 Accuracy; second hit 75% damage.'
+    }
+  },
+  {
+    name: 'Momentum Redirect',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 30,
+      type: 'Passive',
+      spCost: 0,
+      description: 'After dodging or parrying, your next attack gains +20 Accuracy and +20% damage.'
+    }
+  },
+  {
+    name: 'Elegant Defense',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 35,
+      type: 'Passive',
+      spCost: 0,
+      description: 'If your parry MoS ≥ 40, your next Grace roll this turn has Advantage.'
+    }
+  },
+  {
+    name: 'Razor Precision',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 40,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Critical threshold lowered by 10 (MoS 30+ crits).'
+    }
+  },
+  {
+    name: 'Dancing Blade',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 45,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Chain up to 3 attacks per turn; each extra attack costs +10 SP.'
+    }
+  },
+  {
+    name: 'Arc of Perfection',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 50,
+      type: 'Active',
+      spCost: 50,
+      description: 'Perfect cleave line; foes failing by 30+ suffer a severing critical.'
+    }
+  },
+  {
+    name: 'Micro-Read',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 1,
+      type: 'Passive',
+      spCost: 0,
+      description: '+2 to detect subtle threats and ambush signs.'
+    }
+  },
+  {
+    name: 'Quiet Breath',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 2,
+      type: 'Passive',
+      spCost: 0,
+      description: '+1 SP regen while hidden.'
+    }
+  },
+  {
+    name: 'Toe Edge',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 3,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Once per turn, take a 1 ft micro-step without provoking.'
+    }
+  },
+  {
+    name: 'Eye for Openings',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 4,
+      type: 'Passive',
+      spCost: 0,
+      description: '+2 Accuracy vs a foe you observed last round.'
+    }
+  },
+  {
+    name: 'Loose Sand',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 5,
+      type: 'Active',
+      spCost: 5,
+      description: 'Create a 5 ft patch of unstable footing; target suffers −10 Accuracy for 1 round.'
+    }
+  },
+  {
+    name: 'Brush Cover',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 7,
+      type: 'Passive',
+      spCost: 0,
+      description: '+5 Defense while in light cover.'
+    }
+  },
+  {
+    name: 'Ambush Sense',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 10,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Negate Surprise once per scene; +10 Initiative.'
+    }
+  },
+  {
+    name: 'Hunter’s Mark',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 12,
+      type: 'Active',
+      spCost: 10,
+      description: 'Tag a target; you gain +10 Accuracy and +10% damage vs it for 2 rounds.'
+    }
+  },
+  {
+    name: 'Predator’s Step',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 15,
+      type: 'Passive',
+      spCost: 0,
+      description: 'No movement penalty while sneaking; +5 Accuracy from stealth.'
+    }
+  },
+  {
+    name: 'Slipstream',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 18,
+      type: 'Active',
+      spCost: 10,
+      description: 'After a successful dodge, move 10 ft for free.'
+    }
+  },
+  {
+    name: 'Counter Trace',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 20,
+      type: 'Passive',
+      spCost: 0,
+      description: '+10 Accuracy on Reaction attacks.'
+    }
+  },
+  {
+    name: 'Read the Rhythm',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 25,
+      type: 'Passive',
+      spCost: 0,
+      description: 'The first melee attack against you each round suffers −10 Accuracy.'
+    }
+  },
+  {
+    name: 'Ghost Lane',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 30,
+      type: 'Active',
+      spCost: 15,
+      description: 'Pass through 1 enemy’s space; that enemy loses its Reaction this round.'
+    }
+  },
+  {
+    name: 'Danger Clock',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 35,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Once per round, declare Preempt: +10 Defense until your next turn.'
+    }
+  },
+  {
+    name: 'Snap Counter',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 40,
+      type: 'Active',
+      spCost: 20,
+      description: 'When hit, immediately counterattack at +10 Accuracy.'
+    }
+  },
+  {
+    name: 'Pattern Lock',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 45,
+      type: 'Passive',
+      spCost: 0,
+      description: 'If you hit the same target twice in a row, the third gains +20% damage.'
+    }
+  },
+  {
+    name: 'Sixth Sense',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 50,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Once per encounter, downgrade a physical critical against you by one tier.'
+    }
+  },
+  {
+    name: 'Apex Read',
+    type: 'talent',
+    system: {
+      pillar: 'Instinct',
+      ev: 60,
+      type: 'Active',
+      spCost: 25,
+      description: 'For 1 round, you have Advantage on all Grace and Instinct rolls.'
+    }
+  },
+  {
+    name: 'Notation',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 1,
+      type: 'Passive',
+      spCost: 0,
+      description: '+2 to Identify/Analyze Magic checks.'
+    }
+  },
+  {
+    name: 'Tidy Focus',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 2,
+      type: 'Passive',
+      spCost: 0,
+      description: '−1 SP on your lowest-tier spells (min 1).'
+    }
+  },
+  {
+    name: 'Quick Array',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 3,
+      type: 'Passive',
+      spCost: 0,
+      description: '+2 Spell Accuracy on your first cast each scene.'
+    }
+  },
+  {
+    name: 'Stable Weave',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 4,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Reduce spell fizzle chance by 5% (if used in your table rules).'
+    }
+  },
+  {
+    name: 'Aether Sparks',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 5,
+      type: 'Passive',
+      spCost: 0,
+      description: '+5% spell damage vs constructs and golems.'
+    }
+  },
+  {
+    name: 'Calculated Aim',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 7,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Firearms gain +3 Accuracy at medium range.'
+    }
+  },
+  {
+    name: 'Aether Efficiency',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 10,
+      type: 'Passive',
+      spCost: 0,
+      description: '−10% SP cost on spells (minimum −3 SP).'
+    }
+  },
+  {
+    name: 'Sigil Sketch',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 12,
+      type: 'Active',
+      spCost: 10,
+      description: 'Place a 5 ft ward: allies inside gain +5 Magic Defense for 2 rounds.'
+    }
+  },
+  {
+    name: 'Counter-Matrix',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 15,
+      type: 'Passive',
+      spCost: 0,
+      description: '+5 Magic Defense always; +10 while holding a magical focus.'
+    }
+  },
+  {
+    name: 'Prism Channel',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 18,
+      type: 'Active',
+      spCost: 15,
+      description: 'Change a spell’s element at cast time.'
+    }
+  },
+  {
+    name: 'Overclock',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 20,
+      type: 'Active',
+      spCost: 10,
+      description: 'Your next spell deals +20% damage; it also costs +10 SP.'
+    }
+  },
+  {
+    name: 'Arc Geometry',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 25,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Area spells ignore allies if your Margin of Success is 20 or higher.'
+    }
+  },
+  {
+    name: 'Rule of Three',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 30,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Every 3rd spell you cast gains +10 Accuracy.'
+    }
+  },
+  {
+    name: 'Spell Inversion',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 35,
+      type: 'Passive',
+      spCost: 0,
+      description: 'After a successful Disperse, your next spell of that element gains +25% damage.'
+    }
+  },
+  {
+    name: 'Warded Shell',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 40,
+      type: 'Passive',
+      spCost: 0,
+      description: '+10 Magic Defense; once per encounter convert 20 damage you take into SP loss instead.'
+    }
+  },
+  {
+    name: 'Perfect Sigil',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 45,
+      type: 'Active',
+      spCost: 20,
+      description: 'For 1 round, your spells cannot be countered or deflected.'
+    }
+  },
+  {
+    name: 'Field Theorem',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 50,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Allies within 10 ft gain +5 Magic Defense and −5% spell SP costs.'
+    }
+  },
+  {
+    name: 'Paradox Coil',
+    type: 'talent',
+    system: {
+      pillar: 'Theory',
+      ev: 60,
+      type: 'Active',
+      spCost: 25,
+      description: 'Cast the same spell twice this turn; the second cast still costs full SP.'
+    }
+  },
+  {
+    name: 'Steady Gaze',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 1,
+      type: 'Passive',
+      spCost: 0,
+      description: '+2 to Fear resistance.'
+    }
+  },
+  {
+    name: 'Firm Voice',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 2,
+      type: 'Passive',
+      spCost: 0,
+      description: '+2 to command/parley checks.'
+    }
+  },
+  {
+    name: 'Battle Poise',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 3,
+      type: 'Passive',
+      spCost: 0,
+      description: '+1 SP regen while unshaken.'
+    }
+  },
+  {
+    name: 'Rally Sign',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 4,
+      type: 'Active',
+      spCost: 5,
+      description: 'One ally gains +5 Accuracy for 1 round.'
+    }
+  },
+  {
+    name: 'Stern Warning',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 5,
+      type: 'Passive',
+      spCost: 0,
+      description: 'On your first hit each combat, the target suffers −5 Accuracy on its next attack.'
+    }
+  },
+  {
+    name: 'Resolve Bond',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 7,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Adjacent ally gains +2 Defense.'
+    }
+  },
+  {
+    name: 'Kindled Spirit',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 10,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Healing you perform is 10% stronger.'
+    }
+  },
+  {
+    name: 'Courage Pulse',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 12,
+      type: 'Active',
+      spCost: 10,
+      description: 'Allies within 10 ft gain +10 vs Fear for 2 rounds.'
+    }
+  },
+  {
+    name: 'Command Step',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 15,
+      type: 'Passive',
+      spCost: 0,
+      description: 'When you enter melee, the nearest ally can move 5 ft for free.'
+    }
+  },
+  {
+    name: 'Aura of Honesty',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 18,
+      type: 'Passive',
+      spCost: 0,
+      description: '+2 to detect lies; nearby foes −5 Presence.'
+    }
+  },
+  {
+    name: 'Steel Will',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 20,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Once per encounter, ignore a charm, fear, or compulsion for one round.'
+    }
+  },
+  {
+    name: 'Commanding Tone',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 25,
+      type: 'Passive',
+      spCost: 0,
+      description: 'On MoS ≥ 20 social success, gain +10 Presence on the next attempt.'
+    }
+  },
+  {
+    name: 'Rallying Cry',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 30,
+      type: 'Active',
+      spCost: 15,
+      description: 'Party gains +5 Accuracy and +5 SP regen for 2 rounds.'
+    }
+  },
+  {
+    name: 'Guardian Vow',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 35,
+      type: 'Passive',
+      spCost: 0,
+      description: 'The first time an adjacent ally would drop to 0 HP each scene, they remain at 1 HP instead.'
+    }
+  },
+  {
+    name: 'Unbowed',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 40,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Once per encounter, downgrade mental criticals against you by one tier.'
+    }
+  },
+  {
+    name: 'Beacon',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 45,
+      type: 'Active',
+      spCost: 20,
+      description: 'Allies within 10 ft gain +10 Defense for 1 round.'
+    }
+  },
+  {
+    name: 'Inspiring Presence',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 50,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Allies starting their turn within 10 ft gain +2 Accuracy and +2 SP.'
+    }
+  },
+  {
+    name: 'Mandate',
+    type: 'talent',
+    system: {
+      pillar: 'Presence',
+      ev: 60,
+      type: 'Active',
+      spCost: 25,
+      description: 'Choose: enemies within 10 ft make a Presence save or lose their Reaction, or allies gain an extra 5-ft step this round.'
+    }
+  }
+]
+>
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # foundry-pillar-system/packs/weapon-talents.db
+# foundry-pillar-system/packs/weapon-talents.db
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> [ { "name": "Heavy Edge", "type": "talent", "system": { "pillar": "Vigor", "ev": 10, "type": "Passive", "spCost": 0, "description": "Sword attacks +10% damage; +5 SP per swing." } },
+|   { "name": "Forceful Riposte", "type": "talent", "system": { "pillar": "Vigor", "ev": 15, "type": "Active", "spCost": 10, "description": "On successful parry, deal 50% weapon damage back." } },
+|   { "name": "Cleaving Stride", "type": "talent", "system": { "pillar": "Vigor", "ev": 20, "type": "Passive", "spCost": 0, "description": "Follow-through attack on adjacent foe for 50% damage." } },
+|   { "name": "Guard-Breaker", "type": "talent", "system": { "pillar": "Vigor", "ev": 25, "type": "Passive", "spCost": 0, "description": "Critical hits ignore 25% Defense and inflict Stagger(20)." } },
+|   { "name": "Iron Tempo (Sword)", "type": "talent", "system": { "pillar": "Vigor", "ev": 30, "type": "Passive", "spCost": 0, "description": "Per consecutive hit: +5% Damage Reduction (max 20%)." } },
+|   { "name": "Enduring Blade", "type": "talent", "system": { "pillar": "Vigor", "ev": 35, "type": "Passive", "spCost":0, "description": "You can parry while Fatigued I or below 20 SP; successful parries restore 10 SP." } },
+|   { "name": "Rending Slash", "type": "talent", "system": { "pillar": "Vigor", "ev": 40, "type": "Active", "spCost": 30, "description": "Wide diagonal slash: Bleed(25) and −10% armor." } },
+|   { "name": "Bulwark’s Grip", "type": "talent", "system": { "pillar": "Vigor", "ev": 45, "type": "Passive", "spCost":0, "description": "Block with the blade: if SP ≥ 20, gain +15 Defense vs one attack." } },
+|   { "name": "Colossus Cut", "type": "talent", "system": { "pillar": "Vigor", "ev": 50, "type": "Active", "spCost": 50, "description": "Overhand blow: ×2 damage and knock prone (Large or smaller)." } },
+|
+|   { "name": "Perfect Draw", "type": "talent", "system": { "pillar": "Grace", "ev": 10, "type": "Passive", "spCost": 0, "description": "+10 Accuracy; first attack each combat −5 SP." } },
+|   { "name": "Flow Step", "type": "talent", "system": { "pillar": "Grace", "ev": 15, "type": "Passive", "spCost": 0, "description": "After a hit, move 10 ft freely." } },
+|   { "name": "Quick Riposte", "type": "talent", "system": { "pillar": "Grace", "ev": 20, "type": "Active", "spCost": 15, "description": "1/round counter for 50% damage on melee miss." } },
+|   { "name": "Flicker Slash", "type": "talent", "system": { "pillar": "Grace", "ev": 25, "type": "Active", "spCost": 25, "description": "Two rapid strikes at −10 Accuracy; second hit 75% damage." } },
+|   { "name": "Momentum Redirect", "type": "talent", "system": { "pillar": "Grace", "ev": 30, "type": "Passive", "spCost": 0, "description": "After a dodge or parry, next attack +20 Accuracy and +20% damage." } },
+|   { "name": "Elegant Defense", "type": "talent", "system": { "pillar": "Grace", "ev": 35, "type": "Passive", "spCost": 0, "description": "If parry MoS ≥ 40, your next Grace roll has Advantage this turn." } },
+|   { "name": "Razor Precision", "type": "talent", "system": { "pillar": "Grace", "ev": 40, "type": "Passive", "spCost": 0, "description": "Critical threshold −10 (MoS 30+ crits)." } },
+|   { "name": "Dancing Blade", "type": "talent", "system": { "pillar": "Grace", "ev": 45, "type": "Passive", "spCost": 0, "description": "Chain up to 3 attacks/turn; +10 SP for each extra attack." } },
+|   { "name": "Arc of Perfection", "type": "talent", "system": { "pillar": "Grace", "ev": 50, "type": "Active", "spCost": 50, "description": "Cleave line; foes failing by 30+ suffer severing critical." } }
+| ]
+[
+  {
+    name: 'Heavy Edge',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 10,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Sword attacks +10% damage; +5 SP per swing.'
+    }
+  },
+  {
+    name: 'Forceful Riposte',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 15,
+      type: 'Active',
+      spCost: 10,
+      description: 'On successful parry, deal 50% weapon damage back.'
+    }
+  },
+  {
+    name: 'Cleaving Stride',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 20,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Follow-through attack on adjacent foe for 50% damage.'
+    }
+  },
+  {
+    name: 'Guard-Breaker',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 25,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Critical hits ignore 25% Defense and inflict Stagger(20).'
+    }
+  },
+  {
+    name: 'Iron Tempo (Sword)',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 30,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Per consecutive hit: +5% Damage Reduction (max 20%).'
+    }
+  },
+  {
+    name: 'Enduring Blade',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 35,
+      type: 'Passive',
+      spCost: 0,
+      description: 'You can parry while Fatigued I or below 20 SP; successful parries restore 10 SP.'
+    }
+  },
+  {
+    name: 'Rending Slash',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 40,
+      type: 'Active',
+      spCost: 30,
+      description: 'Wide diagonal slash: Bleed(25) and −10% armor.'
+    }
+  },
+  {
+    name: 'Bulwark’s Grip',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 45,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Block with the blade: if SP ≥ 20, gain +15 Defense vs one attack.'
+    }
+  },
+  {
+    name: 'Colossus Cut',
+    type: 'talent',
+    system: {
+      pillar: 'Vigor',
+      ev: 50,
+      type: 'Active',
+      spCost: 50,
+      description: 'Overhand blow: ×2 damage and knock prone (Large or smaller).'
+    }
+  },
+  {
+    name: 'Perfect Draw',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 10,
+      type: 'Passive',
+      spCost: 0,
+      description: '+10 Accuracy; first attack each combat −5 SP.'
+    }
+  },
+  {
+    name: 'Flow Step',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 15,
+      type: 'Passive',
+      spCost: 0,
+      description: 'After a hit, move 10 ft freely.'
+    }
+  },
+  {
+    name: 'Quick Riposte',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 20,
+      type: 'Active',
+      spCost: 15,
+      description: '1/round counter for 50% damage on melee miss.'
+    }
+  },
+  {
+    name: 'Flicker Slash',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 25,
+      type: 'Active',
+      spCost: 25,
+      description: 'Two rapid strikes at −10 Accuracy; second hit 75% damage.'
+    }
+  },
+  {
+    name: 'Momentum Redirect',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 30,
+      type: 'Passive',
+      spCost: 0,
+      description: 'After a dodge or parry, next attack +20 Accuracy and +20% damage.'
+    }
+  },
+  {
+    name: 'Elegant Defense',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 35,
+      type: 'Passive',
+      spCost: 0,
+      description: 'If parry MoS ≥ 40, your next Grace roll has Advantage this turn.'
+    }
+  },
+  {
+    name: 'Razor Precision',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 40,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Critical threshold −10 (MoS 30+ crits).'
+    }
+  },
+  {
+    name: 'Dancing Blade',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 45,
+      type: 'Passive',
+      spCost: 0,
+      description: 'Chain up to 3 attacks/turn; +10 SP for each extra attack.'
+    }
+  },
+  {
+    name: 'Arc of Perfection',
+    type: 'talent',
+    system: {
+      pillar: 'Grace',
+      ev: 50,
+      type: 'Active',
+      spCost: 50,
+      description: 'Cleave line; foes failing by 30+ suffer severing critical.'
+    }
+  }
+]
+>
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # foundry-pillar-system/packs/starter-spells.db
+# foundry-pillar-system/packs/starter-spells.db
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> [ { "name": "Ember Dart", "type": "spell", "system": { "element": "Fire", "cost": 20, "scaling": "Theory", "range": "10m", "effect": "80% damage. 20% to inflict Burn(15).", "cast": "/roll 1d100 <= @p.theory" } },
+|   { "name": "Arc Bolt", "type": "spell", "system": { "element": "Lightning", "cost": 25, "scaling": "Theory+Instinct", "range": "15m", "effect": "90% damage. 10% arcs to 1 extra target for half damage.", "cast": "/roll 1d100 <= (@p.theory + @p.instinct) / 2" } },
+|   { "name": "Frost Lance", "type": "spell", "system": { "element": "Ice", "cost": 25, "scaling": "Theory", "range": "12m", "effect": "75% damage. On MoS ≥ 40, inflict Chilled(20).", "cast": "/roll 1d100 <= @p.theory" } },
+|   { "name": "Grav Pull", "type": "spell", "system": { "element": "Earth", "cost": 30, "scaling": "Theory+Vigor", "range": "8m", "effect": "Drag a target 5 ft; 50% blunt damage.", "cast": "/roll 1d100 <= (@p.theory + @p.vigor) / 2" } },
+|   { "name": "Shadow Needle", "type": "spell", "system": { "element": "Void", "cost": 20, "scaling": "Presence", "range": "15m", "effect": "Ignores armor; +50% damage vs feared or dazed targets.", "cast": "/roll 1d100 <= @p.presence" } },
+|   { "name": "Radiant Spark", "type": "spell", "system": { "element": "Light", "cost": 25, "scaling": "Presence", "range": "12m", "effect": "70% damage. On crit: Blind 1 round (−20 Accuracy).", "cast": "/roll 1d100 <= @p.presence" } },
+|   { "name": "Flameburst", "type": "spell", "system": { "element": "Fire", "cost": 40, "scaling": "Theory", "range": "10 ft radius", "effect": "AoE 60% damage. Burn(10) for 2 rounds.", "cast": "/roll 1d100 <= @p.theory" } },
+|   { "name": "Tempest Surge", "type": "spell", "system": { "element": "Air", "cost": 45, "scaling": "Instinct+Theory","range": "Cone", "effect": "50% damage in a cone; chance to Disorient.", "cast": "/roll 1d100 <= (@p.instinct + @p.theory) / 2" } },
+|   { "name": "Earthen Shock", "type": "spell", "system": { "element": "Earth", "cost": 50, "scaling": "Vigor", "range": "15 ft radius", "effect": "70% damage; Instinct Save or Stagger(20).", "cast": "/roll 1d100 <= @p.vigor" } },
+|   { "name": "Cryo Bloom", "type": "spell", "system": { "element": "Ice", "cost": 40, "scaling": "Theory", "range": "10 ft radius", "effect": "40% damage; Chilled(30) for 2 rounds.", "cast": "/roll 1d100 <= @p.theory" } },
+|   { "name": "Sanctum Nova", "type": "spell", "system": { "element": "Light", "cost": 50, "scaling": "Presence", "range": "10 ft burst", "effect": "Foes: 60% damage. Allies: restore 10 SP.", "cast": "/roll 1d100 <= @p.presence" } },
+|   { "name": "Mend Wounds", "type": "spell", "system": { "element": "Restoration", "cost": 30, "scaling": "Presence", "range": "Touch", "effect": "Heal 20% HP.", "cast": "/roll 1d100 <= @p.presence" } },
+|   { "name": "Rejuvenate", "type": "spell", "system": { "element": "Restoration", "cost": 25, "scaling": "Instinct", "range": "Touch", "effect": "Restore 25 SP (up to max).", "cast": "/roll 1d100 <= @p.instinct" } },
+|   { "name": "Healing Light", "type": "spell", "system": { "element": "Light", "cost": 40, "scaling": "Presence+Theory", "range": "10 ft radius", "effect": "Allies heal 15% HP.", "cast": "/roll 1d100 <= (@p.presence + @p.theory) / 2" } },
+|   { "name": "Cleanse", "type": "spell", "system": { "element": "Restoration", "cost": 25, "scaling": "Presence", "range": "Touch", "effect": "Remove 1 negative status (not curses).", "cast": "/roll 1d100 <= @p.presence" } },
+|   { "name": "Aegis Ward", "type": "spell", "system": { "element": "Protection", "cost": 40, "scaling": "Theory", "range": "Self/Ally", "effect": "Absorbs damage equal to 30% of caster’s Theory.", "cast": "/roll 1d100 <= @p.theory" } },
+|   { "name": "Haste", "type": "spell", "system": { "element": "Air", "cost": 35, "scaling": "Grace+Theory", "range": "Self/Ally", "effect": "+10 Accuracy and +10 SP regen for 3 rounds.", "cast": "/roll 1d100 <= (@p.grace + @p.theory) / 2"} },
+|   { "name": "Sunder Armor", "type": "spell", "system": { "element": "Debuff", "cost": 25, "scaling": "Vigor", "range": "10m", "effect": "Target −20 Defense for 2 rounds (Vigor save).", "cast": "/roll 1d100 <= @p.vigor" } },
+|   { "name": "Wither", "type": "spell", "system": { "element": "Hex", "cost": 30, "scaling": "Theory", "range": "10m","effect": "−10 Damage and −10 SP regen (Instinct save).", "cast": "/roll 1d100 <= @p.theory" } },
+|   { "name": "Blindness", "type": "spell", "system": { "element": "Light", "cost": 25, "scaling": "Presence", "range":"10m", "effect": "−30 Accuracy (Grace save).", "cast": "/roll 1d100 <= @p.presence" } },
+|   { "name": "Hex of Slowness", "type": "spell", "system": { "element": "Hex", "cost": 35, "scaling": "Theory+Instinct", "range": "10m", "effect": "−20% movement and attack speed (Grace save).", "cast": "/roll 1d100 <= (@p.theory + @p.instinct) / 2" } },
+|   { "name": "Despair Mark", "type": "spell", "system": { "element": "Presence", "cost": 35, "scaling": "Presence", "range": "10m", "effect": "Target −15 Presence; allies gain +10 Accuracy vs target.", "cast": "/roll 1d100 <= @p.presence"} }
+| ]
+[
+  {
+    name: 'Ember Dart',
+    type: 'spell',
+    system: {
+      element: 'Fire',
+      cost: 20,
+      scaling: 'Theory',
+      range: '10m',
+      effect: '80% damage. 20% to inflict Burn(15).',
+      cast: '/roll 1d100 <= @p.theory'
+    }
+  },
+  {
+    name: 'Arc Bolt',
+    type: 'spell',
+    system: {
+      element: 'Lightning',
+      cost: 25,
+      scaling: 'Theory+Instinct',
+      range: '15m',
+      effect: '90% damage. 10% arcs to 1 extra target for half damage.',
+      cast: '/roll 1d100 <= (@p.theory + @p.instinct) / 2'
+    }
+  },
+  {
+    name: 'Frost Lance',
+    type: 'spell',
+    system: {
+      element: 'Ice',
+      cost: 25,
+      scaling: 'Theory',
+      range: '12m',
+      effect: '75% damage. On MoS ≥ 40, inflict Chilled(20).',
+      cast: '/roll 1d100 <= @p.theory'
+    }
+  },
+  {
+    name: 'Grav Pull',
+    type: 'spell',
+    system: {
+      element: 'Earth',
+      cost: 30,
+      scaling: 'Theory+Vigor',
+      range: '8m',
+      effect: 'Drag a target 5 ft; 50% blunt damage.',
+      cast: '/roll 1d100 <= (@p.theory + @p.vigor) / 2'
+    }
+  },
+  {
+    name: 'Shadow Needle',
+    type: 'spell',
+    system: {
+      element: 'Void',
+      cost: 20,
+      scaling: 'Presence',
+      range: '15m',
+      effect: 'Ignores armor; +50% damage vs feared or dazed targets.',
+      cast: '/roll 1d100 <= @p.presence'
+    }
+  },
+  {
+    name: 'Radiant Spark',
+    type: 'spell',
+    system: {
+      element: 'Light',
+      cost: 25,
+      scaling: 'Presence',
+      range: '12m',
+      effect: '70% damage. On crit: Blind 1 round (−20 Accuracy).',
+      cast: '/roll 1d100 <= @p.presence'
+    }
+  },
+  {
+    name: 'Flameburst',
+    type: 'spell',
+    system: {
+      element: 'Fire',
+      cost: 40,
+      scaling: 'Theory',
+      range: '10 ft radius',
+      effect: 'AoE 60% damage. Burn(10) for 2 rounds.',
+      cast: '/roll 1d100 <= @p.theory'
+    }
+  },
+  {
+    name: 'Tempest Surge',
+    type: 'spell',
+    system: {
+      element: 'Air',
+      cost: 45,
+      scaling: 'Instinct+Theory',
+      range: 'Cone',
+      effect: '50% damage in a cone; chance to Disorient.',
+      cast: '/roll 1d100 <= (@p.instinct + @p.theory) / 2'
+    }
+  },
+  {
+    name: 'Earthen Shock',
+    type: 'spell',
+    system: {
+      element: 'Earth',
+      cost: 50,
+      scaling: 'Vigor',
+      range: '15 ft radius',
+      effect: '70% damage; Instinct Save or Stagger(20).',
+      cast: '/roll 1d100 <= @p.vigor'
+    }
+  },
+  {
+    name: 'Cryo Bloom',
+    type: 'spell',
+    system: {
+      element: 'Ice',
+      cost: 40,
+      scaling: 'Theory',
+      range: '10 ft radius',
+      effect: '40% damage; Chilled(30) for 2 rounds.',
+      cast: '/roll 1d100 <= @p.theory'
+    }
+  },
+  {
+    name: 'Sanctum Nova',
+    type: 'spell',
+    system: {
+      element: 'Light',
+      cost: 50,
+      scaling: 'Presence',
+      range: '10 ft burst',
+      effect: 'Foes: 60% damage. Allies: restore 10 SP.',
+      cast: '/roll 1d100 <= @p.presence'
+    }
+  },
+  {
+    name: 'Mend Wounds',
+    type: 'spell',
+    system: {
+      element: 'Restoration',
+      cost: 30,
+      scaling: 'Presence',
+      range: 'Touch',
+      effect: 'Heal 20% HP.',
+      cast: '/roll 1d100 <= @p.presence'
+    }
+  },
+  {
+    name: 'Rejuvenate',
+    type: 'spell',
+    system: {
+      element: 'Restoration',
+      cost: 25,
+      scaling: 'Instinct',
+      range: 'Touch',
+      effect: 'Restore 25 SP (up to max).',
+      cast: '/roll 1d100 <= @p.instinct'
+    }
+  },
+  {
+    name: 'Healing Light',
+    type: 'spell',
+    system: {
+      element: 'Light',
+      cost: 40,
+      scaling: 'Presence+Theory',
+      range: '10 ft radius',
+      effect: 'Allies heal 15% HP.',
+      cast: '/roll 1d100 <= (@p.presence + @p.theory) / 2'
+    }
+  },
+  {
+    name: 'Cleanse',
+    type: 'spell',
+    system: {
+      element: 'Restoration',
+      cost: 25,
+      scaling: 'Presence',
+      range: 'Touch',
+      effect: 'Remove 1 negative status (not curses).',
+      cast: '/roll 1d100 <= @p.presence'
+    }
+  },
+  {
+    name: 'Aegis Ward',
+    type: 'spell',
+    system: {
+      element: 'Protection',
+      cost: 40,
+      scaling: 'Theory',
+      range: 'Self/Ally',
+      effect: 'Absorbs damage equal to 30% of caster’s Theory.',
+      cast: '/roll 1d100 <= @p.theory'
+    }
+  },
+  {
+    name: 'Haste',
+    type: 'spell',
+    system: {
+      element: 'Air',
+      cost: 35,
+      scaling: 'Grace+Theory',
+      range: 'Self/Ally',
+      effect: '+10 Accuracy and +10 SP regen for 3 rounds.',
+      cast: '/roll 1d100 <= (@p.grace + @p.theory) / 2'
+    }
+  },
+  {
+    name: 'Sunder Armor',
+    type: 'spell',
+    system: {
+      element: 'Debuff',
+      cost: 25,
+      scaling: 'Vigor',
+      range: '10m',
+      effect: 'Target −20 Defense for 2 rounds (Vigor save).',
+      cast: '/roll 1d100 <= @p.vigor'
+    }
+  },
+  {
+    name: 'Wither',
+    type: 'spell',
+    system: {
+      element: 'Hex',
+      cost: 30,
+      scaling: 'Theory',
+      range: '10m',
+      effect: '−10 Damage and −10 SP regen (Instinct save).',
+      cast: '/roll 1d100 <= @p.theory'
+    }
+  },
+  {
+    name: 'Blindness',
+    type: 'spell',
+    system: {
+      element: 'Light',
+      cost: 25,
+      scaling: 'Presence',
+      range: '10m',
+      effect: '−30 Accuracy (Grace save).',
+      cast: '/roll 1d100 <= @p.presence'
+    }
+  },
+  {
+    name: 'Hex of Slowness',
+    type: 'spell',
+    system: {
+      element: 'Hex',
+      cost: 35,
+      scaling: 'Theory+Instinct',
+      range: '10m',
+      effect: '−20% movement and attack speed (Grace save).',
+      cast: '/roll 1d100 <= (@p.theory + @p.instinct) / 2'
+    }
+  },
+  {
+    name: 'Despair Mark',
+    type: 'spell',
+    system: {
+      element: 'Presence',
+      cost: 35,
+      scaling: 'Presence',
+      range: '10m',
+      effect: 'Target −15 Presence; allies gain +10 Accuracy vs target.',
+      cast: '/roll 1d100 <= @p.presence'
+    }
+  }
+]
+>
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # foundry-pillar-system/packs/starter-weapons.db
+# foundry-pillar-system/packs/starter-weapons.db
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> [ { "name": "One-Handed Sword", "type": "weapon", "system": { "category": "Melee", "class": "Sword (1H)", "primaryStat": "Grace", "secondaryStat": "Vigor", "spCost": 20, "damage": "100%", "ap": 10, "critTrait": "+10 crit range", "range":"1m", "effect": "Balanced, stance-shift capable." } },
+|   { "name": "Two-Handed Sword", "type": "weapon", "system": { "category": "Melee", "class": "Sword (2H)", "primaryStat": "Vigor", "secondaryStat": "Grace", "spCost": 35, "damage": "125%", "ap": 20, "critTrait": "+25% crit damage", "range": "1.5m", "effect": "Sweeping power; Momentum stacking." } },
+|   { "name": "Spear", "type": "weapon", "system": { "category": "Melee", "class": "Spear", "primaryStat": "Instinct", "secondaryStat": "Grace", "spCost": 25, "damage": "90%", "ap": 15, "critTrait": "Double MoS for AP", "range": "2m", "effect": "Reach control and counters." } },
+|   { "name": "Axe", "type": "weapon", "system": { "category": "Melee", "class": "Axe", "primaryStat": "Vigor", "secondaryStat": "Instinct", "spCost": 35, "damage": "130%", "ap": 25, "critTrait": "Bleed(20)+armor shred on crit", "range": "1m", "effect": "High burst; armor breaker." } },
+|   { "name": "Hammer", "type": "weapon", "system": { "category": "Melee", "class": "Hammer", "primaryStat": "Vigor", "secondaryStat": "Presence", "spCost": 40, "damage": "140%", "ap": 10, "critTrait": "Stagger on hit; +25% crit damage", "range": "1m", "effect": "Concussive disruption." } },
+|   { "name": "Staff", "type": "weapon", "system": { "category": "Magic", "class": "Staff", "primaryStat": "Instinct", "secondaryStat": "Theory", "spCost": 25, "damage": "80%", "ap": 5, "critTrait": "Channel storage; reactive weave", "range": "1.5m", "effect": "Caster conduit & parry." } },
+|   { "name": "Flexible Weapon", "type": "weapon", "system": { "category": "Melee", "class": "Whip/Chain", "primaryStat": "Grace", "secondaryStat": "Presence", "spCost": 25, "damage": "90%", "ap": 10, "critTrait": "Reach dance; bleed/entangle", "range": "3m", "effect": "Crowd control finesse." } },
+|   { "name": "Bow", "type": "weapon", "system": { "category": "Ranged", "class": "Bow", "primaryStat": "Grace", "secondaryStat": "Instinct", "spCost": 20, "damage": "100%", "ap": 15, "critTrait": "Steady Aim +20 Accuracy if stationary", "range": "10m", "effect": "Long-range precision." } },
+|   { "name": "Firearm", "type": "weapon", "system": { "category": "Ranged", "class": "Gun", "primaryStat": "Theory", "secondaryStat": "Grace", "spCost": 30, "damage": "110%", "ap": 20, "critTrait": "Ballistic curve: +10% crit vs unaware","range": "12m", "effect": "High-AP burst; reload cost 20 SP." } },
+|   { "name": "Fist Weapons", "type": "weapon", "system": { "category": "Melee", "class": "Fists/Gauntlets", "primaryStat": "Grace", "secondaryStat": "Vigor", "spCost": 10, "damage": "85%", "ap": 5, "critTrait": "Combo meter: every 3rd hit+5 SP", "range": "0.5m", "effect": "Tempo chaining style." } },
+|   { "name": "Magical Focus", "type": "weapon", "system": { "category": "Magic", "class": "Focus/Tome", "primaryStat":"Theory", "secondaryStat": "Presence", "spCost": 15, "damage": "Spell Channel", "ap": 0, "critTrait": "+10 Spell Accuracy; −10% SP cost", "range": "—", "effect": "Amplifies spellcasting throughput." } }
+| ]
+[
+  {
+    name: 'One-Handed Sword',
+    type: 'weapon',
+    system: {
+      category: 'Melee',
+      class: 'Sword (1H)',
+      primaryStat: 'Grace',
+      secondaryStat: 'Vigor',
+      spCost: 20,
+      damage: '100%',
+      ap: 10,
+      critTrait: '+10 crit range',
+      range: '1m',
+      effect: 'Balanced, stance-shift capable.'
+    }
+  },
+  {
+    name: 'Two-Handed Sword',
+    type: 'weapon',
+    system: {
+      category: 'Melee',
+      class: 'Sword (2H)',
+      primaryStat: 'Vigor',
+      secondaryStat: 'Grace',
+      spCost: 35,
+      damage: '125%',
+      ap: 20,
+      critTrait: '+25% crit damage',
+      range: '1.5m',
+      effect: 'Sweeping power; Momentum stacking.'
+    }
+  },
+  {
+    name: 'Spear',
+    type: 'weapon',
+    system: {
+      category: 'Melee',
+      class: 'Spear',
+      primaryStat: 'Instinct',
+      secondaryStat: 'Grace',
+      spCost: 25,
+      damage: '90%',
+      ap: 15,
+      critTrait: 'Double MoS for AP',
+      range: '2m',
+      effect: 'Reach control and counters.'
+    }
+  },
+  {
+    name: 'Axe',
+    type: 'weapon',
+    system: {
+      category: 'Melee',
+      class: 'Axe',
+      primaryStat: 'Vigor',
+      secondaryStat: 'Instinct',
+      spCost: 35,
+      damage: '130%',
+      ap: 25,
+      critTrait: 'Bleed(20)+armor shred on crit',
+      range: '1m',
+      effect: 'High burst; armor breaker.'
+    }
+  },
+  {
+    name: 'Hammer',
+    type: 'weapon',
+    system: {
+      category: 'Melee',
+      class: 'Hammer',
+      primaryStat: 'Vigor',
+      secondaryStat: 'Presence',
+      spCost: 40,
+      damage: '140%',
+      ap: 10,
+      critTrait: 'Stagger on hit; +25% crit damage',
+      range: '1m',
+      effect: 'Concussive disruption.'
+    }
+  },
+  {
+    name: 'Staff',
+    type: 'weapon',
+    system: {
+      category: 'Magic',
+      class: 'Staff',
+      primaryStat: 'Instinct',
+      secondaryStat: 'Theory',
+      spCost: 25,
+      damage: '80%',
+      ap: 5,
+      critTrait: 'Channel storage; reactive weave',
+      range: '1.5m',
+      effect: 'Caster conduit & parry.'
+    }
+  },
+  {
+    name: 'Flexible Weapon',
+    type: 'weapon',
+    system: {
+      category: 'Melee',
+      class: 'Whip/Chain',
+      primaryStat: 'Grace',
+      secondaryStat: 'Presence',
+      spCost: 25,
+      damage: '90%',
+      ap: 10,
+      critTrait: 'Reach dance; bleed/entangle',
+      range: '3m',
+      effect: 'Crowd control finesse.'
+    }
+  },
+  {
+    name: 'Bow',
+    type: 'weapon',
+    system: {
+      category: 'Ranged',
+      class: 'Bow',
+      primaryStat: 'Grace',
+      secondaryStat: 'Instinct',
+      spCost: 20,
+      damage: '100%',
+      ap: 15,
+      critTrait: 'Steady Aim +20 Accuracy if stationary',
+      range: '10m',
+      effect: 'Long-range precision.'
+    }
+  },
+  {
+    name: 'Firearm',
+    type: 'weapon',
+    system: {
+      category: 'Ranged',
+      class: 'Gun',
+      primaryStat: 'Theory',
+      secondaryStat: 'Grace',
+      spCost: 30,
+      damage: '110%',
+      ap: 20,
+      critTrait: 'Ballistic curve: +10% crit vs unaware',
+      range: '12m',
+      effect: 'High-AP burst; reload cost 20 SP.'
+    }
+  },
+  {
+    name: 'Fist Weapons',
+    type: 'weapon',
+    system: {
+      category: 'Melee',
+      class: 'Fists/Gauntlets',
+      primaryStat: 'Grace',
+      secondaryStat: 'Vigor',
+      spCost: 10,
+      damage: '85%',
+      ap: 5,
+      critTrait: 'Combo meter: every 3rd hit +5 SP',
+      range: '0.5m',
+      effect: 'Tempo chaining style.'
+    }
+  },
+  {
+    name: 'Magical Focus',
+    type: 'weapon',
+    system: {
+      category: 'Magic',
+      class: 'Focus/Tome',
+      primaryStat: 'Theory',
+      secondaryStat: 'Presence',
+      spCost: 15,
+      damage: 'Spell Channel',
+      ap: 0,
+      critTrait: '+10 Spell Accuracy; −10% SP cost',
+      range: '—',
+      effect: 'Amplifies spellcasting throughput.'
+    }
+  }
+]
+>
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # foundry-pillar-system/packs/sample-actors.db  (Jaune)
+# foundry-pillar-system/packs/sample-actors.db  (Jaune)
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> # =========================
+# =========================
+^
+
+Uncaught SyntaxError: Invalid or unexpected token
+> [ {
+|     "name": "Jaune (Level 4 Striker)",
+|     "type": "character",
+|     "system": {
+|       "p": { "vigor": 65, "grace": 85, "instinct": 70, "theory": 50, "presence": 45 },
+|       "derived": { "hp": 78, "sp": 73, "accuracy": 66, "pd": 66, "md": 56, "spregen": 14, "move": 17 },
+|       "integrity": { "armor": 100, "ward": 100 },
+|       "defenses": [
+|         { "name": "Parry Window", "pillar": "Grace", "threshold": 65, "spcost": 15, "trigger": "Melee hit (MoS ≤ 40)", "effect": "Negate hit; Counterattack if parry MoS ≥ 30." },
+|         { "name": "Counterposture", "pillar": "Instinct", "threshold": 70, "spcost": 25, "trigger": "Physical critical received", "effect": "Halve damage; retaliate at +10 Accuracy." }
+|       ],
+|       "equipment": [
+|         { "name": "Padded Jacket (Armor +10)", "slot": "armor", "armor": 10 },
+|         { "name": "Focus Band (Ward +5)", "slot": "ward", "ward": 5 }
+|       ],
+|       "spells": ["Ember Dart","Arc Bolt","Mend Wounds","Aegis Ward","Haste"],
+|       "talents": [
+|         "Razor Precision","Flicker Slash","Quick Riposte",
+|         "Iron Tempo","Second Wind","Iron Grip","Tireless Step",
+|         "Ambush Sense","Predator’s Step","Counter Trace","Sixth Sense",
+|         "Aether Efficiency","Counter-Matrix","Arc Geometry",
+|         "Steel Will","Commanding Tone"
+|       ],
+|       "status": []
+|     }
+|   } ]
+[
+  {
+    name: 'Jaune (Level 4 Striker)',
+    type: 'character',
+    system: {
+      p: [Object],
+      derived: [Object],
+      integrity: [Object],
+      defenses: [Array],
+      equipment: [Array],
+      spells: [Array],
+      talents: [Array],
+      status: []
+    }
+  }
+]
+>

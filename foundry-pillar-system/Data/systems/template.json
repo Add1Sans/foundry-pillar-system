@@ -1,0 +1,47 @@
+{
+  "Actor": {
+    "types": ["character"],
+    "templates": [],
+    "character": {
+      "p": { "vigor": 50, "grace": 50, "instinct": 50, "theory": 50, "presence": 50 },
+      "derived": { "hp": 60, "sp": 50, "accuracy": 50, "pd": 40, "md": 40, "spregen": 10, "move": 10 },
+      "integrity": { "armor": 100, "ward": 100 },
+      "defenses": [],
+      "equipment": [],
+      "spells": [],
+      "talents": [],
+      "status": []
+    }
+  },
+  "Item": {
+    "types": ["talent", "weapon", "spell"],
+    "templates": [],
+    "talent": {
+      "pillar": "",
+      "ev": 0,
+      "type": "Passive",
+      "spCost": 0,
+      "description": ""
+    },
+    "weapon": {
+      "category": "Melee",
+      "class": "",
+      "primaryStat": "",
+      "secondaryStat": "",
+      "spCost": 15,
+      "damage": "100%",
+      "ap": 0,
+      "critTrait": "",
+      "range": "1m",
+      "effect": ""
+    },
+    "spell": {
+      "element": "",
+      "cost": 0,
+      "scaling": "",
+      "range": "",
+      "effect": "",
+      "cast": ""
+    }
+  }
+}
