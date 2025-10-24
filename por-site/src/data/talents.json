@@ -1,0 +1,79 @@
+[
+  {
+    "id": "talent-intangible-equation",
+    "name": "Intangible Equation",
+    "pillar": "Theory",
+    "tierEV": 40,
+    "type": "Reaction",
+    "spCost": 25,
+    "usesPerEncounter": 2,
+    "description": "Reaction: When you would take damage, become Intangible until the start of your next turn. Negate all damage/effects; flicker 3m. Cannot attack or react while Intangible.",
+    "tags": ["defense","phase"]
+  },
+  {
+    "id": "talent-reactive-counterflow",
+    "name": "Reactive Counterflow",
+    "pillar": "Instinct",
+    "tierEV": 40,
+    "type": "Passive",
+    "description": "When an enemy triggers your trap, you may act during their turn, spending up to 50% of your current SP on actions. +10 Accuracy and +10 Crit% during this counter. Once/round.",
+    "tags": ["trap","reaction"]
+  },
+  {
+    "id": "talent-iron-march",
+    "name": "Iron March",
+    "pillar": "Vigor",
+    "tierEV": 35,
+    "type": "Passive",
+    "description": "Reduce trap/zone damage by 50%. Auto-pass trap Restrain/Knockdown (Tier 1). If you end movement inside a trap zone, gain +10 DR until your next turn.",
+    "tags": ["defense","movement"]
+  },
+  {
+    "id": "talent-shadowstep-instinct",
+    "name": "Shadowstep Instinct",
+    "pillar": "Grace",
+    "tierEV": 35,
+    "type": "Reaction",
+    "spCost": 5,
+    "description": "When a trap or hazard would affect you, roll 1d100 ≤ Grace. On success, ignore all effects and move 2–3m. On crit success (≤25% of Grace), regain 5 SP and gain +10 Evasion until next turn.",
+    "tags": ["evasion","trap"]
+  },
+  {
+    "id": "talent-hunters-clarity",
+    "name": "Hunter's Clarity",
+    "pillar": "Instinct",
+    "tierEV": 40,
+    "type": "Passive",
+    "description": "Advantage vs Fear/Charm/Suggestion/Confusion. When exposed to an Illusion, roll 1d100 ≤ Instinct to immediately disbelieve. +10 Accuracy/Crit% vs active illusion casters.",
+    "tags": ["mental-fortitude","perception"]
+  },
+  {
+    "id": "talent-rational-anchor",
+    "name": "Rational Anchor",
+    "pillar": "Theory",
+    "tierEV": 40,
+    "type": "Passive",
+    "description": "Automatically detect magical illusions within 10m. +20 Mental Resistance. On disbelieve, collapse illusion for allies within 2m and mark the caster, granting +15 Accuracy and +10% Spell Efficiency vs them.",
+    "tags": ["mental-fortitude","analysis"]
+  },
+  {
+    "id": "talent-mirage-veil",
+    "name": "Mirage Veil",
+    "pillar": "Presence",
+    "tierEV": 25,
+    "type": "Active",
+    "spCost": 15,
+    "description": "Create 1–3 illusory copies (+10 Evasion each; 33% chance attacks hit an illusion). Illusions pop when hit or when you make a damaging attack.",
+    "tags": ["illusion","defense"]
+  },
+  {
+    "id": "talent-grand-illusion",
+    "name": "Grand Illusion",
+    "pillar": "Presence",
+    "tierEV": 60,
+    "type": "Ultimate",
+    "spCost": 35,
+    "description": "10m reality-warping illusion for 2 rounds. Enemies contest vs Presence or suffer Blinded/Disoriented/Fear I (choose). You gain +15 DR and +10 Accuracy while active. Countered by Mental Fortitude.",
+    "tags": ["illusion","control","ultimate"]
+  }
+]

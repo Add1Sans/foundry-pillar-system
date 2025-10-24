@@ -1,0 +1,42 @@
+[
+  {
+    "id": "arch-juggernaut",
+    "name": "Juggernaut",
+    "primary": "Vigor",
+    "identity": "Frontline bruiser and line breaker.",
+    "startingTalents": ["talent-iron-march"],
+    "signatureMechanics": ["Charge lines", "Grapples", "High DR"]
+  },
+  {
+    "id": "arch-dancer",
+    "name": "Dancer",
+    "primary": "Grace",
+    "identity": "Mobile duelist with momentum burst.",
+    "startingTalents": ["talent-shadowstep-instinct"],
+    "signatureMechanics": ["Momentum", "Evasion", "Crit chains"]
+  },
+  {
+    "id": "arch-hunter",
+    "name": "Hunter",
+    "primary": "Instinct",
+    "identity": "Reactive controller using traps and marks.",
+    "startingTalents": ["talent-reactive-counterflow","talent-hunters-clarity"],
+    "signatureMechanics": ["Traps", "RCF", "Awareness"]
+  },
+  {
+    "id": "arch-scholar",
+    "name": "Scholar",
+    "primary": "Theory",
+    "identity": "Spell architect with phase defense.",
+    "startingTalents": ["talent-intangible-equation","talent-rational-anchor"],
+    "signatureMechanics": ["Metamagic", "Gravity Well", "Intangibility"]
+  },
+  {
+    "id": "arch-trouper",
+    "name": "Trouper",
+    "primary": "Presence",
+    "identity": "Illusionist and mind weaver.",
+    "startingTalents": ["talent-mirage-veil","talent-grand-illusion"],
+    "signatureMechanics": ["Persona shift", "Illusions", "Mental magic"]
+  }
+]

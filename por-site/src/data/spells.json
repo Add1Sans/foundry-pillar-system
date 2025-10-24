@@ -1,0 +1,26 @@
+[
+  {
+    "id": "spell-arcane-bolt",
+    "name": "Arcane Bolt",
+    "school": "Elemental",
+    "tierEV": 20,
+    "spCost": 10,
+    "range": "10m",
+    "area": "Single",
+    "scaling": ["Theory"],
+    "effects": "Single-target magical strike (WDR × 1.0). Can be modified by Scholar metamagic.",
+    "tags": ["damage","ranged"]
+  },
+  {
+    "id": "spell-dissonant-verse",
+    "name": "Dissonant Verse",
+    "school": "Mental",
+    "tierEV": 25,
+    "spCost": 15,
+    "range": "Self",
+    "area": "Cone 5m",
+    "scaling": ["Presence"],
+    "effects": "Psychic damage WDR × 1.0 and Disoriented (−10 Accuracy) for 1 round. Crit adds Fear I.",
+    "tags": ["aoe","debuff"]
+  }
+]
